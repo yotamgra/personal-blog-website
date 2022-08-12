@@ -1,45 +1,112 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 body {
     letter-spacing: 1px;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
-    height: 3600px;
     display: grid;
     grid-gap: 30px; 
-    /* align-items: center; */
-    /* justify-content: center; */
-    grid-template-columns: 15% 1fr 15%;
-    grid-template-rows: 10% 1fr 10%;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 20% 1fr 10%;
     grid-template-areas: 
-        "header header header"
-        "nav main aside"
-        "footer footer footer";
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
 }
-header, nav, main, aside, footer {
+
+ nav, main, aside, footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+main {
+    height: 1400px;
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
 header {
-    background-color: rgb(138, 7, 68);
+    background-color: rgb(128, 255, 212);
     grid-area: header;
+    color: rgb(216, 142, 158);
+    font-size: 40px;
+    
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-header > button {
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(216, 142, 158);
+    color: rgb(128, 255, 212);
+    border-radius: 20px;
+    border: none;
+}
+
+.nav-header > button:hover {
+    background-color: white;
+    color: rgb(216, 142, 158);
+}
+
+.nav-header > ul > li  {
+    display: inline;
+    margin: 0 30px;
+}
+
+.nav-header > ul > li > a {
+    color: rgb(216, 142, 158);
+    text-decoration: none;
+}
+
+.nav-header > ul > li > a:hover {
+    color: white;
 
 }
 
+
+.logo-img {
+   
+    width: 70px;
+    height: 75px;
+    
+    
+}
+
+header > h1,h5 {
+    margin: 0;
+}
+
 nav {
- 
+    
     background-color: rgb(179, 230, 102);
     grid-area: nav;
 }
 
 .post {
-    width: 35%;
-    height: 20%;
-
+    width: 350px;
+    height:400px;
+    /* margin: 50px; */
+    /* border: 1px solid transparent;  if I remove the border, the strcture is destroyed */
+    
 }
 
 .location-box {
@@ -67,8 +134,8 @@ nav {
 }
 
 .post-img {
-    width: 95%;
-    height: 40%;
+    width: 340px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -79,6 +146,7 @@ nav {
     color: purple;
 }
 .post-tytle {
+    text-decoration: none;
     color: black;
     display: block;
     font-size: 20px;
@@ -99,23 +167,12 @@ nav {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    margin-left: 10px;
-}
-
-
-main {
-    background-color: rgb(77, 91, 170);
-    grid-area: main;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: column;
-    /* align-items: center; */
-
-
-
+    margin: 0 10px;
     
 }
+
+
+
 
 aside {
 
