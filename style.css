@@ -22,21 +22,12 @@ body {
     align-items: center;
 }
 
-
-main {
-    height: 1400px;
-    grid-area: main;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
 header {
     background-color: rgb(128, 255, 212);
     grid-area: header;
     color: rgb(216, 142, 158);
     font-size: 40px;
+    border-radius: 10px;
     
 }
 
@@ -82,13 +73,11 @@ header {
 
 }
 
-
 .logo-img {
    
     width: 70px;
     height: 75px;
-    
-    
+
 }
 
 header > h1,h5 {
@@ -101,12 +90,19 @@ nav {
     grid-area: nav;
 }
 
+main {
+    height: 1400px;
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
 .post {
     width: 350px;
     height:400px;
-    /* margin: 50px; */
-    /* border: 1px solid transparent;  if I remove the border, the strcture is destroyed */
-    
+ 
 }
 
 .location-box {
@@ -124,13 +120,9 @@ nav {
     margin: 5px;
 }
 
-
 .location-box > p {
     font-weight: bold;
     font-size: 12px;
-   
-
-
 }
 
 .post-img {
@@ -160,7 +152,7 @@ nav {
 .writer {
     display:flex;
     align-items: center;
-    /* justify-content: left;    */
+
 }
 
 .writer > img {
@@ -176,10 +168,60 @@ nav {
 
 aside {
 
-    background-color: rgb(99, 159, 187);
+    /* background-color: rgb(99, 159, 187); */
     grid-area: aside;
     
 }
+
+.categories {
+    border: 2px solid rgb(128, 255, 212);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.categories-tytle {
+    text-align: left;
+    margin: 0;
+
+}
+
+.categories > ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.categories > ul > li > span {
+    /* border: 2px solid black; */
+    margin: 5px;
+}
+
+.categories > ul > li > a {
+    text-decoration: none;
+}
+
+.categories > ul > li > a:visited {
+    color: black;
+}
+
+.categories > ul > li > a:hover {
+    color: purple;
+}
+.categories > ul > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(128, 255, 212);
+    
+}
+
+.recent-post-img {
+    width: 65px;
+}
+
 
 footer {
     background-color: rgb(221, 123, 43);
