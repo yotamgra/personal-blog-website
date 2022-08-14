@@ -23,6 +23,7 @@ body {
 }
 
 header {
+    
     background-color: rgb(128, 255, 212);
     grid-area: header;
     color: rgb(216, 142, 158);
@@ -79,7 +80,7 @@ header > h1,h5 {
     width: 80%;
     text-align: left;
 
-}
+}visited
 
 .navigation {
     padding: 30px;
@@ -87,6 +88,7 @@ header > h1,h5 {
 }
 .navigation {
     width: 60%;
+    padding: 20px;
 }
 .navigation > ul > li {
     margin-bottom: 30px;
@@ -288,4 +290,39 @@ footer {
 }
 footer {
     flex-direction: column;
+}
+
+@media only screen and (max-width: 1350px) {
+    body {
+        grid-template-areas: 
+        "header header header"
+        "main main aside"
+        "footer footer footer";
+    }
+
+    nav {
+        display: none;
+    }
+
+    .contact-big-box {
+        width: 95%;
+    }
+
+    .contact-box {
+        width: 28%;
+    }
+
+}
+
+@media only screen and (max-width: 1081px) {
+    body {
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+
+    aside {
+        display: none;
+    }
 }
