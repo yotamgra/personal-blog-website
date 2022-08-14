@@ -9,7 +9,7 @@ body {
     display: grid;
     grid-gap: 30px; 
     grid-template-columns: 20% 1fr 20%;
-    grid-template-rows: 20% 1fr 10%;
+    grid-template-rows: 20% 1fr 20%;
     grid-template-areas: 
     "header header header"
     "nav main aside"
@@ -74,10 +74,29 @@ header > h1,h5 {
     margin: 0;
 }
 
+.side {
+    border: 3px solid rgb(128, 255, 212);
+    width: 80%;
+    text-align: left;
+
+}
+
+.navigation {
+    padding: 30px;
+    margin-left: 20px;
+}
+.navigation {
+    width: 60%;
+}
+.navigation > ul > li {
+    margin-bottom: 30px;
+}
+.navigation-tytle {
+    margin-bottom: 40px;
+}
+
 nav {
-    
-    background-color: rgb(179, 230, 102);
-    grid-area: nav;
+   grid-area: nav;
 }
 
 main {
@@ -116,8 +135,6 @@ main {
     font-size: 12px;
 }
 .post-tytle {
-    text-decoration: none;
-    color: black;
     display: block;
     font-size: 20px;
     font-weight: bold;
@@ -126,10 +143,14 @@ main {
     margin: 0;
     padding-right: 5px;
 }
-.post-tytle:visited {
+.a {
+    text-decoration: none;
     color: black;
 }
-.post-tytle:hover {
+.a:visited {
+    color: black;
+}
+.a:hover {
     color: purple;
 }
 .writer {
@@ -151,18 +172,19 @@ aside {
     flex-direction: column;
 }
 
+
+
 .categories {
-    border: 2px solid rgb(128, 255, 212);
-    width: 80%;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 .categories-tytle {
-    text-align: left;
+    
     margin: 0;
 }
-.categories > ul {
+
+.list {
     list-style: none;
     padding: 0;
 }
@@ -170,36 +192,26 @@ aside {
     margin: 5px;
 }
 .categories > ul > li > a {
-    text-decoration: none;
-}
-.categories > ul > li > a:visited {
-    color: black;
-}
-.categories > ul > li > a:hover {
-    color: purple;
+   color: black;
 }
 .categories > ul > li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 10px;
     border-bottom: 2px solid rgb(128, 255, 212);
 }
 
 .recent-posts {
-    border: 2px solid rgb(128, 255, 212);
-    width: 80%;
     padding: 20px;
     margin-top: 75px;
 
 }
 .recent-posts-tytle {
     text-align: left;
+    margin-bottom: 40px;
 }
-.recent-posts > ul {
-    list-style: none;
-    padding: 0;
 
-}
 .single-recent-post{
     display: flex;
     
@@ -228,9 +240,52 @@ aside {
     font-weight: bold;
 }
 
+.tags {
+    padding: 20px;
+    margin-top: 75px;
+
+}
+.tags-tytle {
+    text-align: left;
+}
+.tags > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags > ul > li {
+    font-size: 18px;
+    margin: 10px;
+} 
+
+.contact-big-box {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(179, 255, 229);
+    border-radius: 20px;
+    width: 350px;
+}
+.info{
+    text-align: left;
+    margin-left: 15px;
+}
+.footer-img {
+    margin-left:30px;
+    color: blueviolet;
+    height: 60px;
+}
 
 footer {
-    background-color: rgb(221, 123, 43);
+    background-color: rgb(128, 255, 212);
+    color: rgb(216, 142, 158);
     grid-area: footer;
-
+}
+footer {
+    flex-direction: column;
 }
