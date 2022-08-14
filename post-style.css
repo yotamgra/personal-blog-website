@@ -4,29 +4,33 @@
 
 body {
     text-align: center;
-    height: 100vh;
+    
     display: grid;
     grid-gap: 15px; 
     /* align-items: center; */
     /* justify-content: center; */
     grid-template-columns: 20% 1fr 25%;
-    grid-template-rows: 10% 1fr 30%;
+    grid-template-rows: 6% 1fr 30%;
     grid-template-areas: 
         "header header header"
         "main main aside"
         "footer footer footer";
 }
 
+.logo-img {
+    height: 95%;
+}
+
 main {
     /* background-color: rgb(77, 91, 170); */
     grid-area: main;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: column;
     /* align-items: center; */
-    padding: 50px 200px;
-    height: 3000px;
+    padding: 6% 6% 6% 10%;
+    /* height: 3000px; */
 }
 .back  {
     width: 100%;
@@ -36,8 +40,9 @@ main {
 }
 
 .post-main-tytle {
-    font-size: 56px;
-    line-height: 100px;
+    font-size: 48px;
+    line-height: 80px;
+    text-align: left;
 }
 
 .writer {
@@ -58,7 +63,7 @@ main {
 }
 
 .post-img {
-    width: 1000px;
+    width: 80%;
     height: 500px;
 }
 
