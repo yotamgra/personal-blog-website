@@ -1,330 +1,313 @@
-* {
-    /* border: 1px solid black; */
-}
-
 body {
-    letter-spacing: 1px;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    display: grid;
-    grid-gap: 30px; 
-    grid-template-columns: 20% 1fr 20%;
-    grid-template-rows: 20% 1fr 20%;
-    grid-template-areas: 
+  letter-spacing: 1px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 20% 1fr 20%;
+  grid-template-areas:
     "header header header"
     "nav main aside"
     "footer footer footer";
 }
 
- nav, main, aside, footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav,
+main,
+aside,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
-    
-    background-color: rgb(128, 255, 212);
-    grid-area: header;
-    color: rgb(216, 142, 158);
-    font-size: 40px;
-    border-radius: 10px;
+  background-color: rgb(128, 255, 212);
+  grid-area: header;
+  color: rgb(216, 142, 158);
+  font-size: 40px;
+  border-radius: 10px;
 }
 .nav-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 35px;
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 35px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .nav-header > button {
-    margin-right: 20px;
-    font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: rgb(216, 142, 158);
-    color: rgb(128, 255, 212);
-    border-radius: 20px;
-    border: none;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgb(216, 142, 158);
+  color: rgb(128, 255, 212);
+  border-radius: 20px;
+  border: none;
 }
 .nav-header > button:hover {
-    background-color: white;
-    color: rgb(216, 142, 158);
+  background-color: white;
+  color: rgb(216, 142, 158);
 }
-.nav-header > ul > li  {
-    display: inline;
-    margin: 0 30px;
+.nav-header > ul > li {
+  display: inline;
+  margin: 0 30px;
 }
 .nav-header > ul > li > a {
-    color: rgb(216, 142, 158);
-    text-decoration: none;
+  color: rgb(216, 142, 158);
+  text-decoration: none;
 }
 .nav-header > ul > li > a:hover {
-    color: white;
-
+  color: white;
 }
 .logo-img {
-   
-    width: 70px;
-    height: 75px;
+  width: 70px;
+  height: 75px;
 }
-header > h1,h5 {
-    margin: 0;
+header > h1,
+h5 {
+  margin: 0;
 }
 
 .side {
-    border: 3px solid rgb(128, 255, 212);
-    width: 80%;
-    text-align: left;
-
-}visited
-
-.navigation {
-    padding: 30px;
-    margin-left: 20px;
+  border: 3px solid rgb(128, 255, 212);
+  width: 80%;
+  text-align: left;
+}
+visited .navigation {
+  padding: 30px;
+  margin-left: 20px;
 }
 .navigation {
-    width: 60%;
-    padding: 20px;
+  width: 60%;
+  padding: 20px;
 }
 .navigation > ul > li {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .navigation-tytle {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 nav {
-   grid-area: nav;
+  grid-area: nav;
 }
 
 main {
-    height: 1400px;
-    grid-area: main;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: column;
+  grid-area: main;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .post {
-    width: 350px;
-    height:400px;
- 
+  width: 350px;
+  height: 400px;
 }
 .post-img {
-    width: 340px;
-    height: 200px;
-    border-radius: 10px;
+  width: 340px;
+  height: 200px;
+  border-radius: 10px;
 }
 .location-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 40px;
-    margin-top: 5px;
-    padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  margin-top: 5px;
+  padding-left: 10px;
 }
 .location-box > img {
-    width: 20px;
-    margin: 5px;
+  width: 20px;
+  margin: 5px;
 }
 .location-box > p {
-    font-weight: bold;
-    font-size: 12px;
+  font-weight: bold;
+  font-size: 12px;
 }
 .post-tytle {
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    padding-left: 15px;
-    margin: 0;
-    padding-right: 5px;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 15px;
+  margin: 0;
+  padding-right: 5px;
 }
 .a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .a:visited {
-    color: black;
+  color: black;
 }
 .a:hover {
-    color: purple;
+  color: purple;
 }
 .writer {
-    display:flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .writer > img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin: 0 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 10px;
 }
 
 aside {
-
-    /* background-color: rgb(99, 159, 187); */
-    grid-area: aside;
-    display: flex;
-    flex-direction: column;
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 .categories {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 .categories-tytle {
-    
-    margin: 0;
+  margin: 0;
 }
 
 .list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 .categories > ul > li > span {
-    margin: 5px;
+  margin: 5px;
 }
 .categories > ul > li > a {
-   color: black;
+  color: black;
 }
 .categories > ul > li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
-    border-bottom: 2px solid rgb(128, 255, 212);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 2px solid rgb(128, 255, 212);
 }
 
 .recent-posts {
-    padding: 20px;
-    margin-top: 75px;
-
+  padding: 20px;
+  margin-top: 75px;
 }
 .recent-posts-tytle {
-    text-align: left;
-    margin-bottom: 40px;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
-.single-recent-post{
-    display: flex;
-    
+.single-recent-post {
+  display: flex;
 }
 .recent-post-img {
-    width: 80px;
-    height: 70px;
-    border-radius: 7px;
+  width: 80px;
+  height: 70px;
+  border-radius: 7px;
 }
 .single-recent-post > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .single-recent-post > div > .post-tytle {
-    font-size: 16px;
-    font-weight: normal;
-    margin-top: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 10px;
 }
 
 .single-recent-post > div > p {
-    text-align: left;
-    padding-left: 15px;
-    font-weight: bold;
+  text-align: left;
+  padding-left: 15px;
+  font-weight: bold;
 }
 
 .tags {
-    padding: 20px;
-    margin-top: 75px;
-
+  padding: 20px;
+  margin-top: 75px;
 }
 .tags-tytle {
-    text-align: left;
+  text-align: left;
 }
 .tags > ul {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .tags > ul > li {
-    font-size: 18px;
-    margin: 10px;
-} 
+  font-size: 18px;
+  margin: 10px;
+}
 
 .contact-big-box {
-    width: 1300px;
-    display: flex;
-    justify-content: space-between;
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: rgb(179, 255, 229);
-    border-radius: 20px;
-    width: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(179, 255, 229);
+  border-radius: 20px;
+  width: 350px;
 }
-.info{
-    text-align: left;
-    margin-left: 15px;
+.info {
+  text-align: left;
+  margin-left: 15px;
 }
 .footer-img {
-    margin-left:30px;
-    color: blueviolet;
-    height: 60px;
+  margin-left: 30px;
+  color: blueviolet;
+  height: 60px;
 }
 
 footer {
-    background-color: rgb(128, 255, 212);
-    color: rgb(216, 142, 158);
-    grid-area: footer;
+  background-color: rgb(128, 255, 212);
+  color: rgb(216, 142, 158);
+  grid-area: footer;
 }
 footer {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 1350px) {
-    body {
-        grid-template-areas: 
-        "header header header"
-        "main main aside"
-        "footer footer footer";
-    }
+  body {
+    grid-template-areas:
+      "header header header"
+      "main main aside"
+      "footer footer footer";
+  }
 
-    nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 
-    .contact-big-box {
-        width: 95%;
-    }
+  .contact-big-box {
+    width: 95%;
+  }
 
-    .contact-box {
-        width: 28%;
-    }
-
+  .contact-box {
+    width: 28%;
+  }
 }
 
 @media only screen and (max-width: 1081px) {
-    body {
-        grid-template-areas: 
-        "header header header"
-        "main main main"
-        "footer footer footer";
-    }
+  body {
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+  }
 
-    aside {
-        display: none;
-    }
+  aside {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1011px) {
@@ -334,50 +317,48 @@ footer {
 }
 
 @media only screen and (max-width: 732px) {
-    body {
-        grid-template-rows: 10% 1fr 10%;
-    }
-    
-    main {
-        height: 100%;
-    }
+  body {
+    grid-template-rows: 10% 1fr 10%;
+  }
+
+  main {
+    height: 100%;
+  }
 }
 
 @media only screen and (max-width: 603px) {
-    body {
-        grid-template-rows: 15% 1fr 10%;
+  body {
+    grid-template-rows: 15% 1fr 10%;
+  }
 
-    }
+  .nav-header > .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 70%;
+  }
 
-    .nav-header > .list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 70%;
-    }
-
-    .sign-up {
-        width: 25%;
-    }
-
+  .sign-up {
+    width: 25%;
+  }
 }
 
 @media only screen and (max-width: 533px) {
-    .nav-header > .list {
-        display: none;
-    }
+  .nav-header > .list {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 370px) {
-    .post-img{
-        width: 90%;
-    }
+  .post-img {
+    width: 90%;
+  }
 
-    .contact-box {
-        justify-content: center;
-    }
+  .contact-box {
+    justify-content: center;
+  }
 
-    .footer-img {
-        margin: 0%;
-    }
+  .footer-img {
+    margin: 0%;
+  }
 }
